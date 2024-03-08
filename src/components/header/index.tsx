@@ -4,11 +4,22 @@ import { Dialog, Disclosure, Popover, Transition } from "@headlessui/react";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import { FaBarsStaggered, FaIndustry } from "react-icons/fa6";
+import { GiElectricalResistance } from "react-icons/gi";
 import { FaPhoneAlt, FaHome, FaLocationArrow } from "react-icons/fa";
+import { MdOutlineWork } from "react-icons/md";
 import { GiMining } from "react-icons/gi";
 import logo from "../../assets/logosartori2.png";
+import { AiFillControl } from "react-icons/ai";
 
-const products = [
+
+const services = [
+  {
+    name: "Todos os serviços",
+    description:
+      "",
+    href: "#",
+    icon: MdOutlineWork,
+  },
   {
     name: "Industrial",
     description:
@@ -31,6 +42,45 @@ const products = [
     icon: FaHome,
   },
 ];
+
+const products = [
+  {
+    name: "Todos os paíneis",
+    description:
+      "",
+    href: "#",
+    icon: GiElectricalResistance,
+  },
+  {
+    name: "Quadro de comando e controle",
+    description:
+      "",
+    href: "#",
+    icon: AiFillControl,
+  },
+  // {
+  //   name: "Quadro distribuição de força",
+  //   description:
+  //     "",
+  //   href: "#",
+  //   icon: GiMining,
+  // },
+  // {
+  //   name: "Quadro distribuição força e luz",
+  //   description:
+  //     "",
+  //   href: "#",
+  //   icon: FaHome,
+  // },
+  // {
+  //   name: "Quadro distribuição residencial",
+  //   description:
+  //     "",
+  //   href: "#",
+  //   icon: FaHome,
+  // },
+];
+
 const callsToAction = [
   { name: "Localização", href: "#", icon: FaLocationArrow },
   { name: "Fale conosco", href: "#", icon: FaPhoneAlt },
@@ -45,7 +95,7 @@ export default function Example() {
   const navigate = useNavigate();
 
   return (
-    <header className="bg-transparent shadow-sm">
+    <header className="bg-transparent shadow-sm relative">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -97,9 +147,9 @@ export default function Example() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
-                  {products.map((item) => (
+                  {services.map((item) => (
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
@@ -160,7 +210,7 @@ export default function Example() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
                   {products.map((item) => (
                     <div
@@ -185,22 +235,7 @@ export default function Example() {
                       </div>
                     </div>
                   ))}
-                </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                  {callsToAction.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
-                    >
-                      <item.icon
-                        className="h-5 w-5 flex-none text-gray-400"
-                        aria-hidden="true"
-                      />
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
+                </div>            
               </Popover.Panel>
             </Transition>
           </Popover>
@@ -249,18 +284,7 @@ export default function Example() {
                           aria-hidden="true"
                         />
                       </Disclosure.Button>
-                      <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
-                          <Disclosure.Button
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                          >
-                            {item.name}
-                          </Disclosure.Button>
-                        ))}
-                      </Disclosure.Panel>
+
                     </>
                   )}
                 </Disclosure>
