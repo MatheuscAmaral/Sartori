@@ -19,7 +19,7 @@ import {
 const Home = () => {
     return (
         <main>
-            <section className="flex flex-col gap-2 text-white">
+            <section className="flex flex-col gap-2 text-white h-96 mb-96">
                 <ResponsiveCarousel className="h-screen w-full" autoPlay infiniteLoop showArrows={false} showThumbs={false} showStatus={false}>
                     <div>
                         <img src={wallpaper2} className="h-screen xl:h-full" style={{ maxHeight: '800px'}} alt="carousel2" />
@@ -40,16 +40,15 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="bg-gray-400">
-                <div className="flex flex-col mx-10 sm:flex-row justify-center gap-20 xl:mx-auto max-w-6xl py-20">
-                    <h1 className="text-2xl w-full">Por que contratar uma empresa <strong>especialista</strong> em instalações elétricas?</h1>
-
-                    <div className="flex flex-col gap-2 items-start">
+            <section className="bg-gray-300">
+                <div className="flex flex-col mx-10 lg:flex-row justify-center gap-20 xl:mx-auto max-w-6xl py-20">
+                    <h1 className="text-2xl w-full font-semibold">Por que contratar uma empresa <strong>especialista</strong> em instalações elétricas?</h1>
+                    <div className="flex flex-col gap-2 items-start font-semibold">
                         <span>
                             Com a Sartori, você economiza e preserva o seu patrimônio. Entre os motivos para contratar uma empresa especialista está a garantia de possuir uma instalação elétrica segura, ininterrupta e sem oscilações.
                         </span>
 
-                        <button className="flex items-center gap-2 bg-transparent text-black rounded-sm mt-2 text-sm hover:bg-gray-300 p-2 transition-all">
+                        <button className="flex items-center gap-2 bg-transparent text-black rounded-sm mt-2 text-sm hover:bg-gray-200 p-2 transition-all">
                             CONHEÇA MAIS MOTIVOS E SURPREENDA-SE 
                             <GoArrowUpRight fontSize={20}/>
                         </button>
@@ -57,17 +56,17 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="grid grid-cols-2 w-full max-h-96">
+            <section className="grid grid-cols-1 lg:grid-cols-2 w-full max-h-96 mt-1">
                 <div className="flex flex-col gap-6 p-10 w-full max-w-6xl h-full py-20 ml-10">
                     <h1 className="text-4xl font-bold">PROJETOS ELÉTRICOS</h1>
                     <p className="text-md">A análise dos projetos elétricos da Sartori é realizada com o objetivo de atender às necessidades individuais de cada cliente. É essencial compreender se o cliente requer um projeto totalmente novo ou uma modificação em um projeto existente.</p>
-                    <button className="flex items-center justify-center gap-2 bg-gray-900 text-white p-5 rounded-sm mt-2 max-w-72 ">
+                    <button className="flex items-center justify-center gap-2 bg-gray-700 text-white p-5 rounded-sm mt-2 max-w-72 ">
                         VEJA TODOS OS PROJETOS
                         <GoArrowUpRight fontSize={20}/>
                     </button>
                 </div>
 
-                <Carousel>
+                <Carousel className="hidden lg:flex">
                     <CarouselContent className="relative">
                         <CarouselItem>
                             <img src={img1} className="h-96"/>
@@ -85,7 +84,27 @@ const Home = () => {
                     <CarouselPrevious className="absolute left-0" />
                     <CarouselNext className="absolute right-10" />
                 </Carousel>
+            </section>
 
+            <section className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="flex flex-col gap-5 px-16 py-32 text-white bg-gray-900">
+                    <h1 className="text-3xl font-bold">
+                        Como a Sartori pode te ajudar?
+                    </h1>
+
+                    <p >
+                        A Sartori é uma empresa focada em qualidade e know-how dos especialistas no ramo industrial, predial e comercial. Equipe qualificada para projeto, instalação e manutenção. Uma vitrine enorme de soluções para colocar a sua empresa em destaque.
+                    </p>
+
+                    <button className="flex items-center justify-center gap-2 bg-gray-400 text-black p-5 rounded-sm mt-2 max-w-72">
+                        VEJA TODOS OS PROJETOS
+                        <GoArrowUpRight fontSize={20}/>
+                    </button>
+                </div>
+
+                <div className="hidden lg:flex">
+                    <img src={img1} alt="" />
+                </div>
             </section>
         </main>
     )
