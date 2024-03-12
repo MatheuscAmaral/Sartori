@@ -1,10 +1,13 @@
-import { GoArrowUpRight } from "react-icons/go";
 import { Carousel as ResponsiveCarousel  } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+
+import { GoArrowUpRight } from "react-icons/go";
 
 import wallpaper from "../../assets/wallpaper.jpg";
 import wallpaper2 from "../../assets/wallpaper2.avif";
 import img1 from "../../assets/img1.webp"
+import electricity from "../../assets/electricity.png"
+import industry from "../../assets/industryy.jpg"
 
 
 import {
@@ -41,7 +44,7 @@ const Home = () => {
             </section>
 
             <section className="bg-gray-300">
-                <div className="flex flex-col mx-10 lg:flex-row justify-center gap-20 xl:mx-auto max-w-6xl py-20">
+                <div className="flex flex-col mx-10 lg:flex-row justify-center gap-20 xl:mx-auto max-w-6xl pt-28 py-20">
                     <h1 className="text-2xl w-full font-semibold">Por que contratar uma empresa <strong>especialista</strong> em instalações elétricas?</h1>
                     <div className="flex flex-col gap-2 items-start font-semibold">
                         <span>
@@ -104,6 +107,40 @@ const Home = () => {
 
                 <div className="hidden lg:flex">
                     <img src={img1} alt="" />
+                </div>
+            </section>
+
+            <section className="grid grid-cols-1 lg:grid-cols-2 w-full gap-24 px-10 lg:px-40 items-center justify-between pt-20 mb-28">
+                <div className='hidden lg:block w-full'>
+                    <img src={industry} className=' rounded-full' />
+                </div>
+
+                <div className="flex flex-col gap-5 w-full">
+                    <h1 className="text-2xl font-bold text-gray-700">Por que contratar a Sartori?</h1>
+
+                    <hr />
+                    <div className="flex gap-2 items-center">
+                        <img src={electricity} className="w-12"/>
+                        <p>Especialistas em instalações elétricas</p>
+                    </div>
+                    <hr />
+
+                    <div className="flex gap-2 items-center">
+                        <img src={electricity} className="w-12"/>
+                        <p>Perita no ramo industrial, predial e comercial</p>
+                    </div>
+
+                    <hr />
+                    <div className="flex gap-2 items-center">
+                        <img src={electricity} className="w-12"/>
+                        <p>Especialista em projeto, instalação e manutenção</p>
+                    </div>
+                    <hr />
+
+                    <button className="flex items-center justify-center gap-2 bg-gray-300 text-black p-5 rounded-sm mt-2 max-w-72">
+                        VEJA TODOS OS PROJETOS
+                        <GoArrowUpRight fontSize={20}/>
+                    </button>
                 </div>
             </section>
         </main>
