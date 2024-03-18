@@ -59,8 +59,8 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="grid grid-cols-1 lg:grid-cols-2 w-full max-h-96 mt-1">
-                <div className="flex flex-col gap-6 p-10 w-full max-w-6xl h-full py-20 ml-10">
+            <section className="grid grid-cols-1 lg:grid-cols-2 w-full mt-1">
+                <div className="flex flex-col gap-6 px-16 w-full max-w-7xl h-full - justify-center ">
                     <h1 className="text-4xl font-bold">PROJETOS ELÉTRICOS</h1>
                     <p className="text-md">A análise dos projetos elétricos da Sartori é realizada com o objetivo de atender às necessidades individuais de cada cliente. É essencial compreender se o cliente requer um projeto totalmente novo ou uma modificação em um projeto existente.</p>
                     <button className="flex items-center justify-center gap-2 bg-gray-700 text-white p-5 rounded-sm mt-2 max-w-72 ">
@@ -70,22 +70,22 @@ const Home = () => {
                 </div>
 
                 <Carousel className="hidden lg:flex">
-                    <CarouselContent className="relative">
-                        <CarouselItem>
-                            <img src={img1} className="h-96"/>
-                        </CarouselItem>
-                        
-                        <CarouselItem>
-                            <img src={img1} className="h-96"/>
+                    <CarouselContent className="relative w-full">
+                        <CarouselItem >
+                            <img src={img1} />
                         </CarouselItem>
 
                         <CarouselItem>
-                            <img src={img1} className="h-96"/>
+                            <img src={img1} />
+                        </CarouselItem>
+
+                        <CarouselItem>
+                            <img src={img1} />
                         </CarouselItem>
                     </CarouselContent>
 
                     <CarouselPrevious className="absolute left-0" />
-                    <CarouselNext className="absolute right-10" />
+                    <CarouselNext className="absolute right-2" />
                 </Carousel>
             </section>
 

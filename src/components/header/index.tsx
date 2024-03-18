@@ -17,7 +17,7 @@ const services = [
     name: "Todos os serviços",
     description:
       "",
-    href: "#",
+    href: "/servicos",
     icon: MdOutlineWork,
   },
   {
@@ -61,8 +61,8 @@ const products = [
 ];
 
 const callsToAction = [
-  { name: "Localização", href: "#", icon: FaLocationArrow },
-  { name: "Fale conosco", href: "#", icon: FaPhoneAlt },
+  { name: "Localização", href: "https://www.google.com.br/maps/place/Sartori+El%C3%A9trica/@-19.9238017,-44.089149,17z/data=!3m1!4b1!4m6!3m5!1s0xa695ca68053d29:0xb9efa65c70d471e9!8m2!3d-19.9238068!4d-44.0865741!16s%2Fg%2F11sfj02jlf?entry=ttu", icon: FaLocationArrow },
+  { name: "Fale conosco", href: "https://wa.me/31971222983", icon: FaPhoneAlt },
 ];
 
 function classNames(...classes: string[]) {
@@ -141,7 +141,7 @@ export default function Example() {
                       </div>
                       <div className="flex-auto">
                         <a
-                          href={item.href}
+                          onClick={() => navigate(item.href)}
                           className="block font-semibold text-gray-900"
                         >
                           {item.name}
@@ -157,6 +157,7 @@ export default function Example() {
                     <a
                       key={item.name}
                       href={item.href}
+                      target="_blank"
                       className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
                     >
                       <item.icon
