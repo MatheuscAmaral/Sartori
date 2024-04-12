@@ -11,7 +11,7 @@ const Contact = () => {
     return (
         <main className="bg-gray-50 pb-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 max-w-6xl mx-10 lg:mx-auto">
-                <section className="flex flex-col gap-5 bg-white shadow-lg rounded-lg mx-auto mt-20 px-5 py-5 pb-10">
+                <section className="flex flex-col gap-5 bg-white shadow-lg rounded-lg mx-auto mt-20 px-5 py-6    pb-10">
                     <h1 className="text-3xl font-bold text-gray-700 ">Fale conosco</h1>
                     <hr />
 
