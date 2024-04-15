@@ -24,7 +24,7 @@ const services = [
     name: "Industrial",
     description:
       "Soluções elétricas industriais, para eficiência operacional e conformidade.",
-    href: "#",
+    href: "/servicos/eletrica-industrial",
     icon: FaIndustry,
   },
   {
@@ -38,7 +38,7 @@ const services = [
     name: "Residêncial",
     description:
       "Serviços elétricos para lares, abrangendo instalações, reparos e automação para ambientes seguros e eficientes.",
-    href: "#",
+    href: "/servicos/eletrica-predial",
     icon: FaHome,
   },
 ];
@@ -48,16 +48,10 @@ const products = [
     name: "Todos os paíneis",
     description:
       "",
-    href: "#",
+    href: "/produtos",
     icon: GiElectricalResistance,
   },
-  {
-    name: "Quadro de comando e controle",
-    description:
-      "",
-    href: "#",
-    icon: AiFillControl,
-  },
+  
 ];
 
 const callsToAction = [

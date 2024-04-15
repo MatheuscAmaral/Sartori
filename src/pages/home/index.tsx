@@ -17,9 +17,12 @@ import {
     CarouselNext,
     CarouselPrevious,
   } from "@/components/ui/carousel"
+import { useNavigate } from 'react-router';
   
 
 const Home = () => {
+    const navigate = useNavigate();
+
     return (
         <main>
             <section className="flex flex-col gap-2 text-white h-96 mb-96">
@@ -137,7 +140,7 @@ const Home = () => {
                     </div>
                     <hr />
 
-                    <button className="flex items-center justify-center gap-2 bg-gray-300 text-black p-5 rounded-sm mt-2 max-w-72">
+                    <button onClick={() => navigate("/servicos")} className="flex items-center justify-center gap-2 bg-gray-300 text-black p-5 rounded-sm mt-2 max-w-72">
                         VEJA TODOS OS PROJETOS
                         <GoArrowUpRight fontSize={20}/>
                     </button>
