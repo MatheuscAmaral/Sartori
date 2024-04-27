@@ -29,14 +29,14 @@ const Project = () => {
           <h1 className="text-3xl font-bold text-center">{title}</h1>
         </div>
 
-        <div className="mt-10 py-14">
+        <div className="mt-10 py-14 px-5">
           <p className="max-w-7xl mx-auto text-lg font-semibold">
           A automação industrial refere-se ao uso de tecnologia e sistemas para controlar e operar processos industriais de forma automatizada, reduzindo a necessidade de intervenção humana direta. Essa automação pode abranger diversos aspectos da indústria, desde a produção e montagem de produtos até o controle de qualidade, logística e gestão de estoques.
           </p>
         </div>
       </section>
 
-      <section className="grid grid-cols-2 gap-20 mt-20 mb-32 mx-auto max-w-5xl items-center">
+      <section className="grid grid-cols-2 gap-20 mt-20 mb-32 mx-auto max-w-5xl items-center px-5">
         <div className='flex flex-col gap-3'>
             <h4 className='text-3xl font-bold'>OBJETIVO</h4>
 
@@ -50,7 +50,7 @@ const Project = () => {
 
       <hr className='mx-auto max-w-5xl'/>
       
-      <section className='grid grid-cols-2 gap-20 mx-auto max-w-4xl mt-10 mb-20'>
+      <section className='grid grid-cols-2 gap-20 mx-auto max-w-4xl mt-10 mb-20 px-5'>
         <h3 className='text-2xl font-bold'>PROJETOS ELÉTRICOS É COM A SARTORI</h3>
         <p className='text-lg'>A <strong className='underline'>Sartori</strong> trabalha com diversos tipos de projetos de instalações elétricas. A empresa conta com Know-how e experiência para atender os segmentos industriais, prediais e comerciais.</p>
       </section>

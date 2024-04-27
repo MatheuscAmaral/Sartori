@@ -7,16 +7,13 @@ import { FaBarsStaggered, FaIndustry } from "react-icons/fa6";
 import { GiElectricalResistance } from "react-icons/gi";
 import { FaPhoneAlt, FaHome, FaLocationArrow } from "react-icons/fa";
 import { MdOutlineWork } from "react-icons/md";
-import { GiMining } from "react-icons/gi";
 import logo from "../../assets/logosartori2.png";
-import { AiFillControl } from "react-icons/ai";
 
 
 const services = [
   {
     name: "Todos os serviços",
-    description:
-      "",
+    description: "",
     href: "/servicos",
     icon: MdOutlineWork,
   },
@@ -27,13 +24,7 @@ const services = [
     href: "/servicos/eletrica-industrial",
     icon: FaIndustry,
   },
-  {
-    name: "Mineração",
-    description:
-      "Infraestrutura elétrica, garantindo segurança e eficiência energética na mineração. ",
-    href: "#",
-    icon: GiMining,
-  },
+
   {
     name: "Residêncial",
     description:
@@ -218,7 +209,7 @@ export default function Example() {
              onClick={() => navigate("/contato")}
              className="cursor-pointer text-sm font-sans font-bold leading-6 text-gray-900"
           >
-            CONTATO
+            ORÇAMENTO
           </a>
         </Popover.Group>
       </nav>
@@ -259,27 +250,34 @@ export default function Example() {
                         />
                       </Disclosure.Button>
 
+                      <ul>
+                        {
+                          open && (
+                              services.map(s => {
+                                return (
+                                  <li  onClick={() => navigate(s.href)} className="py-4 px-3 hover:bg-gray-100 rounded-lg cursor-pointer">
+                                    <a key={s.name}>{s.name}</a>
+                                  </li>
+                                )
+                              })                            
+                            )
+                          }
+                        </ul>
                     </>
                   )}
                 </Disclosure>
                 <a
-                  href="/sobre"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-bold leading-7 text-gray-900 hover:bg-gray-50"
-                >
+                  onClick={() => navigate("/sobre")}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-bold leading-7 text-gray-900 hover:bg-gray-100 cursor-pointer"
+                  >
                   Sartori
                 </a>
                 <a
-                  href="/atividades"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-bold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => navigate("/contato")}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-bold leading-7 text-gray-900 hover:bg-gray-100  cursor-pointer"
                 >
-                  Atividades
-                </a>
-                <a
-                  href="/contato"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-bold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Contato
-                </a>
+                  Orçamento
+                </a>             
               </div>
             </div>
           </div>

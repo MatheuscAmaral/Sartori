@@ -36,12 +36,6 @@ const Services = () => {
       <section className=" w-full mx-auto text-center mt-20">
         <div className="max-w-xl mx-auto flex flex-col gap-6">
           <h3 className="text-xl font-bold">TIPOS DE PROJETOS ELÉTRICOS</h3>
-          <p className="text-xs">
-            Especializada em projetos elétricos industriais, prediais e
-            comerciais, cada um deles desenvolvidos com especificações
-            exclusivas e de acordo com os rigorosos padrões de qualidade da
-            Sartori.
-          </p>
         </div>
 
         <div className="grid grid-cols-2 gap-5 max-w-3xl mx-auto mt-10">
@@ -59,11 +53,6 @@ const Services = () => {
                   <GoArrowUpRight />
                 </button>
               </span>
-              <p className={slide3 ? "block mt-5 text-xs px-2" : "hidden"}>
-                O projeto é desenvolvido levando em consideração o tipo de
-                comércio e seu produto final, assim como as particularidades da
-                edificação e dos equipamentos que serão utilizados.
-              </p>
             </div>
           </div>
           <div className="relative mb-10">
@@ -79,11 +68,6 @@ const Services = () => {
                   <GoArrowUpRight />
                 </button>
               </span>
-              <p className={slide4 ? "block mt-5 text-xs px-2" : "hidden"}>
-                Projeto apresenta alta demanda de energia elétrica devido à
-                potência elevada dos equipamentos e das máquinas, o que implica
-                em exigências de segurança mais rigorosas.
-              </p>
             </div>
           </div>
           <div className="relative mb-10">
@@ -99,11 +83,6 @@ const Services = () => {
                   <GoArrowUpRight />
                 </button>
               </span>
-              <p className={slide5 ? "block mt-5 text-xs px-2" : "hidden"}>
-                É comum que a instalação elétrica de um projeto elétrico predial
-                tenha uma demanda de energia menor, uma vez que seu objetivo
-                principal é a movimentação de pessoas.
-              </p>
             </div>
           </div>
 
@@ -120,11 +99,6 @@ const Services = () => {
                   <GoArrowUpRight />
                 </button>
               </span>
-              <p className={slide6 ? "block mt-5 text-xs px-2" : "hidden"}>
-                Na necessidade de modificações decorrentes de planejamentos ou
-                reformulações, torna-se indispensável a elaboração de um novo
-                projeto de instalação elétrica.
-              </p>
             </div>
           </div>
         </div>
