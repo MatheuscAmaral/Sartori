@@ -17,7 +17,7 @@ import {
     CarouselNext,
     CarouselPrevious,
   } from "@/components/ui/carousel"
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
   
 
 const Home = () => {

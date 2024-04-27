@@ -4,14 +4,9 @@ import img3 from "../../assets/revision-of-inventory-in-warehouse-2022-12-22-20-
 import img4 from "../../assets/car-manufacturing-plant-automotive-shop-the-asse-2023-01-05-00-43-58-utc-1.webp";
 import img5 from "../../assets/instalacao-eletrica-predial.webp";
 import img6 from "../../assets/retrofit-da-instalacao-eletrica-1.webp";
-import { useState } from "react";
 
 const Services = () => {
   const navigate = useNavigate();
-  const [slide3, setSlide3] = useState(false);
-  const [slide4, setSlide4] = useState(false);
-  const [slide5, setSlide5] = useState(false);
-  const [slide6, setSlide6] = useState(false);
 
   return (
     <main className="">
@@ -43,8 +38,6 @@ const Services = () => {
           <div className="relative mb-10">
             <img src={img3} className="rounded-sm" />
             <div
-              onMouseOver={() => setSlide3(true)}
-              onMouseOut={() => setSlide3(false)}
               className="bg-gray-800 text-white rounded-sm p-3 absolute left-7 top-52 w-80 transition-all"
             >
               <span className="flex justify-between px-2 items-center">
@@ -58,8 +51,6 @@ const Services = () => {
           <div className="relative mb-10">
             <img src={img4} className="rounded-sm" />
             <div
-              onMouseOver={() => setSlide4(true)}
-              onMouseOut={() => setSlide4(false)}
               className="bg-gray-800 text-white rounded-sm p-3 absolute left-7 top-52 w-80 transition-all"
             >
               <span className="flex justify-between px-2 items-center">
@@ -73,8 +64,6 @@ const Services = () => {
           <div className="relative mb-10">
             <img src={img5} className="rounded-sm" />
             <div
-              onMouseOver={() => setSlide5(true)}
-              onMouseOut={() => setSlide5(false)}
               className="bg-gray-800 text-white rounded-sm p-3 absolute left-7 top-52 w-80 transition-all"
             >
               <span className="flex justify-between px-2 items-center">
@@ -89,8 +78,6 @@ const Services = () => {
           <div className="relative mb-10">
             <img src={img6} className="rounded-sm" />
             <div
-              onMouseOver={() => setSlide6(true)}
-              onMouseOut={() => setSlide6(false)}
               className="bg-gray-800 text-white rounded-sm p-3 absolute left-7 top-52 w-80 transition-all"
             >
               <span className="flex justify-between px-2 items-center">
