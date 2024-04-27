@@ -39,7 +39,7 @@ const Home = () => {
                     <h1 className="text-4xl px-10 md:text-5xl font-bold text-center" style={{textShadow: "10px 10px 10px rgba(0, 0, 0, 5)"}}>INSTALAÇÃO ELÉTRICA INDUSTRIAL</h1>
                     <p className="text-lg text-center w-10/12" style={{textShadow: "10px 10px 10px rgba(0, 0, 0, 5)"}}>Supere a complexidade com precisão: confie em nossa expertise em projetos industriais de alta complexidade.</p>
             
-                    <button className="flex  items-center gap-2 bg-gray-900 text-white p-5 rounded-sm mt-2">
+                    <button onClick={() => navigate("/sobre")} className="flex items-center gap-2 bg-gray-900 text-white p-5 rounded-sm mt-2">
                         SAIBA MAIS
                         <GoArrowUpRight fontSize={20}/>
                     </button>
