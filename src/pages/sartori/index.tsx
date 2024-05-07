@@ -26,11 +26,8 @@ const Sartori = () => {
                         <div className="flex flex-col gap-5">
                             <h1 className="text-3xl font-bold">A HISTÓRIA DA SARTORI</h1>
                             <p className="text-lg font-semibold">
-                                A história da empresa começou com a capacitação profissional dos atuais sócios, que trabalhavam juntos em uma das maiores empresas automobilísticas do mundo. Com o know-how adquirido, conseguiram entender toda a escala dos projetos elétricos, passando também pela execução e comissionamento.
+                            A Sartori Elétrica partiu da experiência do sócio proprietário desde 1989 no mercado. Atendendo o setor elétrico em âmbito nacional e internacional, o mesmo decidiu expandir suas experiências no mercado,atender todos os setores e gerir uma empresa com valores e que acima de tudo busca a satisfação de seus clientes.
                             </p>
-                            <span className="text-md font-medium">
-                                Antes de iniciar uma trajetória de sucesso no universo de projetos elétricos, é importante saber onde está e para onde quer chegar. A Zetaluz tem seus padrões bem definidos e estabelecidos para um crescimento sólido a curto, médio e longo prazo.
-                            </span>
                         </div>
                     </div>
                 </section>

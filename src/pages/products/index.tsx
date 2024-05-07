@@ -37,7 +37,7 @@ const Products = () => {
           <h3 className="text-xl font-bold">NOSSOS PAINÉIS</h3>
         </div>
 
-        <div className="grid grid-cols-2 gap-5 max-w-3xl mx-auto mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-3xl px-3 mx-auto mt-10">
             {
                 paineis.map(p => {
                     return (

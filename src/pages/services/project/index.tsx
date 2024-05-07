@@ -12,13 +12,13 @@ const Project = () => {
     if (project == "eletrica-comercial") {
         setTitle("AUTOMAÇÃO INDUSTRIAL");
     } else if (project == "eletrica-comercial") {
-        setTitle("INSTALAÇÃO ELÉTRICA COMERCIAL");
+        setTitle("AUTOMAÇÃO ELÉTRICA COMERCIAL");
     } else if (project == "eletrica-industrial") {
-        setTitle("INSTALAÇÃO ELÉTRICA INDUSTRIAL");
+        setTitle("AUTOMAÇÃO ELÉTRICA INDUSTRIAL");
     } else if (project == "eletrica-predial") {
-        setTitle("INSTALAÇÃO ELÉTRICA PREDIAL");
+        setTitle("AUTOMAÇÃO ELÉTRICA PREDIAL");
     } else if (project == "manutencao-eletrica") {
-        setTitle("MANUTENÇÃO DE INSTALAÇÃO ELÉTRICA");
+        setTitle("MANUTENÇÃO DE AUTOMAÇÃO ELÉTRICA");
     }
   })
 

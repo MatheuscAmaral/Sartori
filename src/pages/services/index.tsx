@@ -33,12 +33,11 @@ const Services = () => {
           <h3 className="text-xl font-bold">TIPOS DE PROJETOS ELÉTRICOS</h3>
         </div>
 
-        <div className="grid grid-cols-2 gap-5 max-w-3xl mx-auto mt-10">
-          
+        <div className="grid grid-cols md:grid-cols-2 px-2 gap-5 max-w-3xl mx-auto mt-10">
           <div className="relative mb-10">
             <img src={img3} className="rounded-sm" />
             <div
-              className="bg-gray-800 text-white rounded-sm p-3 absolute left-7 top-52 w-80 transition-all"
+              className="bg-gray-800 text-white rounded-sm p-3 md:absolute md:left-7 md:top-52 md:w-80 transition-all"
             >
               <span className="flex justify-between px-2 items-center">
                 <h3 className="text-sm">INSTALAÇÃO ELÉTRICA COMERCIAL</h3>
@@ -51,7 +50,7 @@ const Services = () => {
           <div className="relative mb-10">
             <img src={img4} className="rounded-sm" />
             <div
-              className="bg-gray-800 text-white rounded-sm p-3 absolute left-7 top-52 w-80 transition-all"
+              className="bg-gray-800 text-white rounded-sm p-3 md:absolute md:left-7 md:top-52 md:w-80 transition-all"
             >
               <span className="flex justify-between px-2 items-center">
                 <h3 className="text-sm">INSTALAÇÃO ELÉTRICA INDUSTRIAL</h3>
@@ -64,7 +63,7 @@ const Services = () => {
           <div className="relative mb-10">
             <img src={img5} className="rounded-sm" />
             <div
-              className="bg-gray-800 text-white rounded-sm p-3 absolute left-7 top-52 w-80 transition-all"
+              className="bg-gray-800 text-white rounded-sm p-3 md:absolute md:left-7 md:top-52 md:w-80 transition-all"
             >
               <span className="flex justify-between px-2 items-center">
                 <h3 className="text-sm">INSTALAÇÃO ELÉTRICA PREDIAL</h3>
@@ -78,7 +77,7 @@ const Services = () => {
           <div className="relative mb-10">
             <img src={img6} className="rounded-sm" />
             <div
-              className="bg-gray-800 text-white rounded-sm p-3 absolute left-7 top-52 w-80 transition-all"
+              className="bg-gray-800 text-white rounded-sm p-3 md:absolute md:left-7 md:top-52 md:w-80 transition-all"
             >
               <span className="flex justify-between px-2 items-center">
                 <h3 className="text-sm">MANUTENÇÃO DE INSTALAÇÃO ELÉTRICA</h3>

@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import { GoArrowUpRight } from "react-icons/go";
-import  img1 from "../../../assets/eletrica-industrial.webp";
 import { useNavigate, useParams } from 'react-router-dom';
+import img5 from "../../../assets/QDR-6.webp";
+import img2 from "../../../assets/QCC-13.webp";
+import img3 from "../../../assets/QDFL-10.webp";
+import img4 from "../../../assets/QDL-6.webp";
 
 const Product = () => {
   const {product} = useParams();
@@ -33,7 +36,7 @@ const Product = () => {
         </div>
       </section>
 
-      <section className="grid grid-cols-2 gap-20 mt-20 mb-32 mx-auto max-w-5xl items-center">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-20 mt-20 mb-32 mx-auto max-w-5xl items-center px-10">
         <div className='flex flex-col gap-3'>
             <h4 className='text-3xl font-bold'>{product}</h4>
 
@@ -41,22 +44,33 @@ const Product = () => {
         </div>
 
         <div>
-            <img src={img1} className='w-96' />
+          {
+            product == "QDR" && <img src={img5} className='w-96 rounded-md' />
+          }
+          {
+            product == "QCC" && <img src={img2} className='w-96' />
+          }
+          {
+            product == "QDFL" && <img src={img3} className='w-96' />
+          }
+          {
+            product == "QDL" && <img src={img4} className='w-96' />
+          }
         </div>
       </section>
 
       <hr className='mx-auto max-w-5xl'/>
       
-      <section className='grid grid-cols-2 gap-20 mx-auto max-w-4xl mt-10 mb-20'>
+      <section className='grid grid-cols-2 gap-20 mx-auto max-w-4xl mt-10 mb-20 px-10'>
         <h3 className='text-2xl font-bold'>PROJETOS ELÉTRICOS É COM A SARTORI</h3>
         <p className='text-lg'>A <strong className='underline'>Sartori</strong> é especialista quando o assunto é projetos elétricos . A empresa oferece desde o Projeto Fotovoltaico até o comissionamento com segurança e qualidade.</p>
       </section>
 
         <button
-            onClick={() => navigate("/servicos")}
+            onClick={() => navigate("/produtos")}
             className="flex items-center gap-2 bg-gray-800 text-white mx-auto text-sm p-3 rounded-sm mt-2 text-md hover:bg-gray-600 transition-all"
         >
-            VER TODOS OS PROJETOS
+            VER TODOS OS PRODUTOS
             <GoArrowUpRight fontSize={20} />
         </button>
 
