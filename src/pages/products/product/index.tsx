@@ -43,7 +43,7 @@ const Product = () => {
             <p className='text-sm font-medium'>{desc}</p>
         </div>
 
-        <div>
+        <div className='flex justify-center'>
           {
             product == "QDR" && <img src={img5} className='w-96 rounded-md' />
           }

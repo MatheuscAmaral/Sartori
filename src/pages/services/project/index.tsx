@@ -36,14 +36,14 @@ const Project = () => {
         </div>
       </section>
 
-      <section className="grid grid-cols-2 gap-20 mt-20 mb-32 mx-auto max-w-5xl items-center px-5">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-20 mt-20 mb-32 mx-auto max-w-5xl items-center px-5">
         <div className='flex flex-col gap-3'>
             <h4 className='text-3xl font-bold'>OBJETIVO</h4>
 
             <p className='text-lg font-medium'>A <strong>Sartori</strong> é especializada em serviços de automação industrial, atendendo a uma variedade de segmentos industriais. Com nossos serviços de automação, é possível alcançar um aumento na eficiência produtiva, reduzir os custos operacionais, aprimorar a qualidade do produto e garantir a segurança dos trabalhadores. Nossas soluções oferecem flexibilidade para se adaptar às demandas em constante mudança do mercado.</p>
         </div>
 
-        <div>
+        <div className='flex justify-center'>
             <img src={img1} className='w-96' />
         </div>
       </section>
