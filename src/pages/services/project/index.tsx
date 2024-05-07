@@ -50,7 +50,7 @@ const Project = () => {
 
       <hr className='mx-auto max-w-5xl'/>
       
-      <section className='grid grid-cols-2 gap-20 mx-auto max-w-4xl mt-10 mb-20 px-5'>
+      <section className='grid md:grid-cols-2 gap-20 mx-auto max-w-4xl mt-10 mb-20 px-5'>
         <h3 className='text-2xl font-bold'>PROJETOS ELÉTRICOS É COM A SARTORI</h3>
         <p className='text-lg'>A <strong className='underline'>Sartori</strong> trabalha com diversos tipos de projetos de instalações elétricas. A empresa conta com Know-how e experiência para atender os segmentos industriais, prediais e comerciais.</p>
       </section>

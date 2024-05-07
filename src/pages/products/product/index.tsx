@@ -61,7 +61,7 @@ const Product = () => {
 
       <hr className='mx-auto max-w-5xl'/>
       
-      <section className='grid grid-cols-2 gap-20 mx-auto max-w-4xl mt-10 mb-20 px-10'>
+      <section className='grid md:grid-cols-2 gap-20 mx-auto max-w-4xl mt-10 mb-20 px-10'>
         <h3 className='text-2xl font-bold'>PROJETOS ELÉTRICOS É COM A SARTORI</h3>
         <p className='text-lg'>A <strong className='underline'>Sartori</strong> é especialista quando o assunto é projetos elétricos . A empresa oferece desde o Projeto Fotovoltaico até o comissionamento com segurança e qualidade.</p>
       </section>

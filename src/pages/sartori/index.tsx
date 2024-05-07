@@ -21,7 +21,9 @@ const Sartori = () => {
                     </p>
 
                     <div className="grid grid-cols-1 gap-10 lg:gap-0 lg:grid-cols-2 mx-10 mt-10">
-                        <img src={logo} className="w-72 mx-16" alt="logo" />
+                        <div className="flex justify-center">
+                            <img src={logo} className="w-72 mx-16" alt="logo" />
+                        </div>
 
                         <div className="flex flex-col gap-5">
                             <h1 className="text-3xl font-bold">A HISTÓRIA DA SARTORI</h1>
