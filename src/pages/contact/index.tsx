@@ -7,7 +7,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <main className="bg-gray-50 pb-20">
+        <main className=" pb-20">
             <h1 className="text-3xl text-center mt-10 font-bold text-gray-700 ">Solicite seu orçamento</h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-10 lg:mx-auto">         
                 <section className="flex w-full flex-col gap-5 mx-auto mt-20 lg:px-20 py-6  pb-10">

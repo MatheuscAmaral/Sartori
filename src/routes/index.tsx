@@ -7,6 +7,7 @@ import Services from "@/pages/services";
 import Project from "@/pages/services/project";
 import Products from "@/pages/products";
 import Product from "@/pages/products/product";
+import MaoObra from "@/pages/services/mao-de-obra";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path: "/servicos",
                 element: <Services/>
+            },
+            {
+                path: "/servicos/mao-de-obra",
+                element: <MaoObra/>
             },
             {
                 path: "/servicos/:project",

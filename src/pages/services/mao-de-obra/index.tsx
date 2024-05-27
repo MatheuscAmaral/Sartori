@@ -1,43 +1,45 @@
 import { GoArrowUpRight } from "react-icons/go";
 import { useNavigate } from "react-router-dom";
 
-const Products = () => {
+const MaoObra = () => {
   const navigate = useNavigate();
 
   const paineis = [
-    {href: "QGBT", title: "QGBT – Quadro geral de baixa tensão"},
-    {href: "QDMT", title: "QDMT –  Quadro de distribuição de média tenção"},
-    {href: "QDCC",  title: "QDCC – Quadro de Distribuição de Corrente Contínua"},
-    {href: "QDCA", title: "QDCA – Quadro de distribuição de corrente alternada"},
-    {href: "QDL", title: "QDL – Quadro Distribuição de Luz"},
-    {href: "QDT", title: "QDT – Quadro de distribuição de tomadas"},
-    {href: "PR", title: "Painéis de Remota"},
-    {href: "CLP",  title: "CLP - Painéis de CLP"},
-    {href: "CCM",  title: "CCM - Centro de Comando de Motores"},
-    {href: "QDC",  title: "QDC - Quadro de distribuição de circuitos"},
-    {href: "CLP",  title: "CLP - Painéis de CLP"},
-    {href: "PPD",  title: "PPD - Painéis de partida direta"},
+    {title: "Montador Eletromecânico"},
+    {title: "Eletricista de Painéis"},
+    {title: "Eletrícista de Manutenção"},
+    {title: "Eletrícista Força e Controle"},
+    {title: "Técnico de Elétrica"},
+    {title: "Técnico de Automação"},
+    {title: "Ajudante de Montagem Eletromecânica"},
+    {title: "Ajudante de Eletricista"},
+    {title: "Soldador"},
+    {title: "Almoxarife"},
+    {title: "Encarregado de Montagem"},
+    {title: "Encarregado de Elétrica"},
+    {title: "Supervisor"},
+    {title: "Projetista"},
+    {title: "Engenheiro"}
   ]
 
   return (
     <main className="">
       <div className="mx-auto  text-center">
         <div className="py-14 bg-gray-200">
-          <h1 className="text-3xl font-bold text-center">PAINÉIS ELÉTRICOS</h1>
+          <h1 className="text-3xl font-bold text-center">Mão de Obra em regime de homem-hora</h1>
         </div>
 
         <div className="mt-10 py-14">
-          <h3 className="text-lg font-semibold pb-4"> PAINÉIS ELÉTRICOS</h3>
-          <p className="max-w-2xl mx-auto text-sm font-semibold">
-            A Sartori tem expertise em painéis elétricos, sendo uma das suas atividades principais desde o início.
-            Atendemos a demanda de mercado para a montagem de painéis e quadros sendo eles:
+          <p className="max-w-2xl mx-auto text-md font-semibold">
+            Uma das principais atividades da Sartori é o fornecimento de mão de obra em regime de hh. É com prazer e empenho que buscamos complementar as
+            equipes de nossos clientes, atendendo a demanda com as seguintes funções:
           </p>
         </div>
       </div>
 
       <section className=" w-full mx-auto text-center mt-10">
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl px-3 mx-auto mt-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl px-3 mx-auto mt-5">
             {
                 paineis.map(p => {
                     return (
@@ -69,4 +71,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default MaoObra;

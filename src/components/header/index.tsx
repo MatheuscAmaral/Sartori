@@ -206,6 +206,13 @@ export default function Example() {
           </Popover>
 
           <a
+             onClick={() => navigate("/servicos/mao-de-obra")}
+             className="cursor-pointer text-sm font-sans font-bold leading-6 text-gray-900"
+          >
+            MÃO DE OBRA
+          </a>
+
+          <a
              onClick={() => navigate("/contato")}
              className="cursor-pointer text-sm font-sans font-bold leading-6 text-gray-900"
           >
@@ -266,6 +273,12 @@ export default function Example() {
                     </>
                   )}
                 </Disclosure>
+                <a
+                  onClick={() => navigate("/servicos/mao-de-obra")}
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-bold leading-7 text-gray-900 hover:bg-gray-100 cursor-pointer"
+                  >
+                  Mão de obra
+                </a>
                 <a
                   onClick={() => navigate("/produtos")}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-bold leading-7 text-gray-900 hover:bg-gray-100 cursor-pointer"

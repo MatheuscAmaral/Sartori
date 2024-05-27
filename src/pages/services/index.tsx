@@ -13,17 +13,13 @@ const Services = () => {
       <div className="mx-auto  text-center">
         <div className="py-14 bg-gray-200">
           <h1 className="text-3xl font-bold text-center">
-            INSTALAÇÕES ELÉTRICAS ESPECIALIDADE <br /> SARTORI
+            MANUTENÇÃO ELÉTRICA
           </h1>
         </div>
 
         <div className="mt-10 py-14">
           <p className="max-w-7xl mx-auto text-lg font-semibold">
-            A <strong className=" underline">Sartori</strong> realiza uma
-            análise criteriosa dos projetos elétricos, visando atender às
-            necessidades individuais de cada cliente. É de extrema importância
-            compreender se o cliente requer um projeto totalmente novo ou uma
-            modificação no projeto existente.
+            A <strong>Sartori</strong> conta com colaboradores preparados para resolver os problemas de indústrias, empresas, comércios, residências e outros, afim de sempre entregar segurança e confiança aos seus clientes. Prestamos manutenções em:
           </p>
         </div>
       </div>
@@ -66,7 +62,7 @@ const Services = () => {
               className="bg-gray-800 text-white rounded-sm p-3 md:absolute md:left-7 md:top-52 md:w-80 transition-all"
             >
               <span className="flex justify-between px-2 items-center">
-                <h3 className="text-sm">INSTALAÇÃO ELÉTRICA PREDIAL</h3>
+                <h3 className="text-sm">INSTALAÇÃO ELÉTRICA RESIDENCIAL</h3>
                 <button onClick={() => navigate("/servicos/eletrica-predial")} className="bg-gray-300 hover:bg-gray-200 text-black  p-2 rounded-full">
                   <GoArrowUpRight />
                 </button>
@@ -80,8 +76,8 @@ const Services = () => {
               className="bg-gray-800 text-white rounded-sm p-3 md:absolute md:left-7 md:top-52 md:w-80 transition-all"
             >
               <span className="flex justify-between px-2 items-center">
-                <h3 className="text-sm">MANUTENÇÃO DE INSTALAÇÃO ELÉTRICA</h3>
-                <button onClick={() => navigate("/servicos/manutencao-eletrica")} className="bg-gray-300 hover:bg-gray-200 text-black p-2 rounded-full">
+                <h3 className="text-sm">POSTES DE ILUMINAÇÃO EM CONDOMÍNIOS E RUAS PRIVATIVAS</h3>
+                <button onClick={() => navigate("/servicos/postes-ruas")} className="bg-gray-300 hover:bg-gray-200 text-black p-2 rounded-full">
                   <GoArrowUpRight />
                 </button>
               </span>
