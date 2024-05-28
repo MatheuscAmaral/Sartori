@@ -75,7 +75,9 @@ const Home = () => {
                     </button>
                 </div>
 
-                <img src={wallp} alt="" />
+                <div className="hidden lg:block h-full">
+                    <img src={wallp} alt="" />
+                </div>
             </section>
 
             <section className="grid grid-cols-1 lg:grid-cols-2">
