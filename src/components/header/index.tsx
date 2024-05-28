@@ -53,10 +53,16 @@ const callsToAction = [
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
+ 
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
+  
+  const navigateRoute = (route: string) => {
+    setMobileMenuOpen(false);
+    navigate(route);
+  }
 
   return (
     <header className="bg-transparent shadow-sm relative">
@@ -81,14 +87,14 @@ export default function Example() {
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <a
-            onClick={() => navigate("/")}
+            onClick={() => navigateRoute("/")}
             className="cursor-pointer text-sm font-sans font-bold leading-6 text-gray-900"
           >
             HOME
           </a>
 
           <a
-            onClick={() => navigate("/sobre")}
+            onClick={() => navigateRoute("/sobre")}
             className="cursor-pointer text-sm font-sans font-bold leading-6 text-gray-900"
           >
             SARTORI
@@ -126,7 +132,7 @@ export default function Example() {
                       </div>
                       <div className="flex-auto">
                         <a
-                          onClick={() => navigate(item.href)}
+                          onClick={() => navigateRoute(item.href)}
                           className="block font-semibold text-gray-900"
                         >
                           {item.name}
@@ -158,7 +164,7 @@ export default function Example() {
           </Popover>
 
           <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-sans font-bold leading-6 text-gray-900">
+            <Popover.Button className="flex items-center gap-x-1 text-sm font-sans font-bold leading-6 text-gray-900 ">
               PAINÉIS ELÉTRICOS
               <IoIosArrowDown
                 className="h-5 w-5 flex-none text-gray-400"
@@ -206,14 +212,14 @@ export default function Example() {
           </Popover>
 
           <a
-             onClick={() => navigate("/servicos/mao-de-obra")}
+             onClick={() => navigateRoute("/servicos/mao-de-obra")}
              className="cursor-pointer text-sm font-sans font-bold leading-6 text-gray-900"
           >
             MÃO DE OBRA
           </a>
 
           <a
-             onClick={() => navigate("/contato")}
+             onClick={() => navigateRoute("/contato")}
              className="cursor-pointer text-sm font-sans font-bold leading-6 text-gray-900"
           >
             ORÇAMENTO
@@ -262,7 +268,7 @@ export default function Example() {
                           open && (
                               services.map(s => {
                                 return (
-                                  <li  onClick={() => navigate(s.href)} className="py-4 px-3 hover:bg-gray-100 rounded-lg cursor-pointer">
+                                  <li  onClick={() => navigateRoute(s.href)} className="py-4 px-3 hover:bg-gray-100 rounded-lg cursor-pointer">
                                     <a key={s.name}>{s.name}</a>
                                   </li>
                                 )
@@ -274,25 +280,25 @@ export default function Example() {
                   )}
                 </Disclosure>
                 <a
-                  onClick={() => navigate("/servicos/mao-de-obra")}
+                  onClick={() => navigateRoute("/servicos/mao-de-obra")}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-bold leading-7 text-gray-900 hover:bg-gray-100 cursor-pointer"
                   >
                   Mão de obra
                 </a>
                 <a
-                  onClick={() => navigate("/produtos")}
+                  onClick={() => navigateRoute("/produtos")}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-bold leading-7 text-gray-900 hover:bg-gray-100 cursor-pointer"
                   >
                   Paíneis elétricos
                 </a>
                 <a
-                  onClick={() => navigate("/sobre")}
+                  onClick={() => navigateRoute("/sobre")}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-bold leading-7 text-gray-900 hover:bg-gray-100 cursor-pointer"
                   >
                   Sartori
                 </a>
                 <a
-                  onClick={() => navigate("/contato")}
+                  onClick={() => navigateRoute("/contato")}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-sans font-bold leading-7 text-gray-900 hover:bg-gray-100  cursor-pointer"
                 >
                   Orçamento

@@ -12,19 +12,19 @@ const Services = () => {
     <main className="">
       <div className="mx-auto  text-center">
         <div className="py-14 bg-gray-200">
-          <h1 className="text-3xl font-bold text-center">
+          <h1 className="text-3xl px-5 font-bold text-center">
             MANUTENÇÃO ELÉTRICA
           </h1>
         </div>
 
-        <div className="mt-10 py-14">
+        <div className="mt-10 py-14 px-5">
           <p className="max-w-7xl mx-auto text-lg font-semibold">
             A <strong>Sartori</strong> conta com colaboradores preparados para resolver os problemas de indústrias, empresas, comércios, residências e outros, afim de sempre entregar segurança e confiança aos seus clientes. Prestamos manutenções em:
           </p>
         </div>
       </div>
 
-      <section className=" w-full mx-auto text-center mt-20">
+      <section className=" w-full mx-auto text-center mt-20 px-5">
         <div className="max-w-xl mx-auto flex flex-col gap-6">
           <h3 className="text-xl font-bold">TIPOS DE PROJETOS ELÉTRICOS</h3>
         </div>

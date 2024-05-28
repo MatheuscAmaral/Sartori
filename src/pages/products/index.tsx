@@ -22,11 +22,11 @@ const Products = () => {
   return (
     <main className="">
       <div className="mx-auto  text-center">
-        <div className="py-14 bg-gray-200">
+        <div className="py-14 bg-gray-200 px-5">
           <h1 className="text-3xl font-bold text-center">PAINÉIS ELÉTRICOS</h1>
         </div>
 
-        <div className="mt-10 py-14">
+        <div className="mt-10 py-14 px-5">
           <h3 className="text-lg font-semibold pb-4"> PAINÉIS ELÉTRICOS</h3>
           <p className="max-w-2xl mx-auto text-sm font-semibold">
             A Sartori tem expertise em painéis elétricos, sendo uma das suas atividades principais desde o início.

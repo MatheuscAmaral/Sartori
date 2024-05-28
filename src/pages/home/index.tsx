@@ -20,8 +20,8 @@ const Home = () => {
 
     return (
         <main>
-            <section className="flex flex-col gap-2 justify-center mt-52 text-white h-96">
-                <ResponsiveCarousel className="h-screen relative w-full" autoPlay infiniteLoop showArrows={false} showThumbs={false} showStatus={false}>
+            <section className="flex flex-col gap-2 justify-center relative text-white h-96">
+                <ResponsiveCarousel className="h-screen absolute top-0 w-full" autoPlay infiniteLoop showArrows={false} showThumbs={false} showStatus={false}>
                     <div className='flex justify-center'>
                         <div className='flex flex-col gap-3 absolute z-50 top-32 justify-center max-w-xl px-3'>
                             <h3 className='text-4xl p-3 rounded-lg items-center' style={{ backgroundColor: '#000000a6'}}>INSTALAÇÃO ELÉTRICA <br /> INDUSTRIAL</h3>
@@ -41,15 +41,16 @@ const Home = () => {
                     </div>
                 </ResponsiveCarousel>
                 
-                <div className='flex justify-center'>
-                    <button onClick={() => navigate("/servicos")} className="flex items-center gap-2 w-72 justify-center bg-gray-900 absolute top-64 text-white p-5 rounded-sm mt-52 ">
+                <div className='flex justify-center w-full  mt-32 absolute top-96 px-4'>
+                    <button onClick={() => navigate("/servicos")} className="flex items-center gap-2 w-72 justify-center bg-gray-900 text-white p-5 rounded-sm ">
                         VER TODOS OS PROJETOS
                         <GoArrowUpRight fontSize={20}/>
                     </button>
                 </div>
             </section>
 
-            <section className="bg-gray-300 mt-52">
+
+            <section className="bg-gray-300 mt-96 px-4">
                 <div className="flex flex-col mx-10 lg:flex-row justify-center gap-20 xl:mx-auto max-w-6xl pt-28 py-20">
                     <h1 className="text-2xl w-full font-semibold">Por que contratar uma empresa <strong>especialista</strong> em instalações elétricas?</h1>
                     <div className="flex flex-col gap-2 items-start font-semibold">
@@ -80,13 +81,13 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="grid grid-cols-1 lg:grid-cols-2">
+            <section className="grid grid-cols-1 lg:grid-cols-2 ">
                 <div className="flex flex-col gap-5 px-16 py-32 text-white bg-gray-900">
                     <h1 className="text-3xl font-bold">
                         Como a Sartori pode te ajudar?
                     </h1>
 
-                    <p >
+                    <p>
                         A Sartori é uma empresa focada em qualidade e know-how dos especialistas no ramo industrial, predial e comercial. Equipe qualificada para projeto, instalação e manutenção. Uma vitrine enorme de soluções para colocar a sua empresa em destaque.
                     </p>
 

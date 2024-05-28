@@ -11,8 +11,8 @@ const Sartori = () => {
     return (
         <main>
             <div className="flex flex-col lg:mx-auto items-center gap-20">
-                <div className="w-full bg-gray-200 py-16">
-                    <h1 className="text-3xl lg:text-4xl text-center font-bold text-gray-800">SARTORI – ENGENHARIA ELÉTRICA</h1>
+                <div className="w-full bg-gray-200 py-16 px-5">
+                    <h1 className="text-2xl lg:text-4xl text-center font-bold text-gray-800">SARTORI – ENGENHARIA ELÉTRICA</h1>
                 </div>
 
                 <section className="flex flex-col gap-20 mt-16 max-w-5xl mx-10">
