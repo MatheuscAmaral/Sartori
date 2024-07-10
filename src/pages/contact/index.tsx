@@ -11,7 +11,7 @@ const Contact = () => {
             <h1 className="text-3xl text-center mt-10 font-bold text-gray-700 ">Solicite seu orçamento</h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-10 lg:mx-auto">         
                 <section className="flex w-full flex-col gap-5 mx-auto mt-20 lg:px-20 py-6  pb-10">
-                    <form action="https://formsubmit.co/matheuscamposdoamaral15@gmail.com" method="POST" className="grid grid-cols-1 gap-7 w-full">
+                    <form action="https://formsubmit.co/Sartorieletricamg@gmail.com" method="POST" className="grid grid-cols-1 gap-7 w-full">
                         <div className="grid grid-cols-2 gap-3 justify-center">
                             <div className="flex flex-col gap-2 relative">
                                 <Input id="name" type="text" name="name" placeholder="Digite seu nome..." className=" pr-14 lg:pr-10" required/>
@@ -59,7 +59,7 @@ const Contact = () => {
                             
                             <div className="flex flex-col gap-1">
                                 <span className="text-md font-bold">E-mail</span>
-                                <p className="text-sm font-semibold text-gray-500">sartorieletrica@gmail.com</p>
+                                <p className="text-sm font-semibold text-gray-500">Sartorieletricamg@gmail.com</p>
                             </div>
                         </div>
 
