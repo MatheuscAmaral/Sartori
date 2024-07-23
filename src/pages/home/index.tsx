@@ -1,19 +1,13 @@
 import { Carousel as ResponsiveCarousel  } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
-
 import { GoArrowUpRight } from "react-icons/go";
-
 import wallpaper from "../../assets/instalacoes-eletricas-industriais.jpg";
 import wallpaper2 from "../../assets/wallpPred.avif";
 import img1 from "../../assets/img1.webp"
 import electricity from "../../assets/electricity.png"
 import industry from "../../assets/industryy.jpg"
 import wallp from "../../assets/walppaer4.webp"
-
-
-
 import { useNavigate } from 'react-router-dom';
-  
 
 const Home = () => {
     const navigate = useNavigate();

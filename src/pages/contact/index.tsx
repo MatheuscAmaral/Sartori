@@ -1,41 +1,72 @@
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAbc, MdAlternateEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import { FormEvent, useState } from "react";
+import { TbLoader3 } from "react-icons/tb";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const Contact = () => {
+    const [name, setName] = useState("");
+    const [text, setText] = useState("");
+    const [mail, setMail] = useState("");
+    const [loading, setLoading] = useState(false);
+
+    const sendEmail = (e: FormEvent) => {
+        e.preventDefault();
+
+        const templateParams = {
+            from_name: name,
+            message: text,
+            email: mail
+        }
+
+        emailjs.send("service_c503cth", "template_16fzuh3", templateParams, "yfFvIKlE4yh8xt6R_").then(() => {
+            setLoading(true)
+            setName("");
+            setMail("");
+            setText("");
+            toast.success("E-mail enviado com sucesso!");
+        }, () => {
+            toast.error("Ocorreu um erro ao enviar o e-mail, tente novamente mais tarde!");
+        }).finally(() => {
+            setLoading(false);
+        });
+    }
+
     return (
-        <main className=" pb-20">
+        <main className=" pb-20 my-20">
             <h1 className="text-3xl text-center mt-10 font-bold text-gray-700 ">Solicite seu orçamento</h1>
             <div className="grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-10 lg:mx-auto">         
                 <section className="flex w-full flex-col gap-5 mx-auto mt-20 lg:px-20 py-6  pb-10">
-                    <form action="https://formsubmit.co/Sartorieletricamg@gmail.com" method="POST" className="grid grid-cols-1 gap-7 w-full">
+                    <form onSubmit={sendEmail} className="grid grid-cols-1 gap-7 w-full">
                         <div className="grid grid-cols-2 gap-3 justify-center">
                             <div className="flex flex-col gap-2 relative">
-                                <Input id="name" type="text" name="name" placeholder="Digite seu nome..." className=" pr-14 lg:pr-10" required/>
+                                <Input id="name" onChange={(e) => setName(e.target.value)} type="text" name="name" placeholder="Digite seu nome..." className=" pr-14 lg:pr-10" required/>
                                 <MdAbc className="absolute right-3 top-1 text-gray-600" fontSize={32}/>
                             </div>
 
                             <div className="flex flex-col gap-2 relative">
-                                <Input id="email" type="email" name="email" placeholder="Digite seu e-mail..." className="pr-14 lg:pr-10" required/>
+                                <Input id="email" onChange={(e) => setMail(e.target.value)} type="email" name="email" placeholder="Digite seu e-mail..." className="pr-14 lg:pr-10" required/>
                                 <MdAlternateEmail className="absolute right-3 top-3 text-gray-600" fontSize={20}/>
                             </div>
                         </div>
 
                         <div className="flex flex-col gap-2">
-                            <Textarea id="message" name="message" placeholder="Digite a sua mensagem..." required/>
+                            <Textarea id="message" onChange={(e) => setText(e.target.value)} name="message" placeholder="Digite a sua mensagem..." required/>
                         </div>
 
                         <button type="submit" className="bg-black text-white p-3 rounded-lg text-lg font-semibold">
-                            Enviar mensagem
+                            {
+                                loading ? (
+                                    <div className="flex justify-center animate-spin">
+                                        <TbLoader3 fontSize={20}/>
+                                    </div>
+                                ) : "Enviar mensagem"
+                            }
                         </button>
-
-                        
-                        <input type="hidden" name="_subject" value="Nova mensagem!"></input>
-                        <input type="hidden" name="_captcha" value="false"></input>
-                        <input type="text" name="_honey"/>
                     </form>
                 </section>
 
